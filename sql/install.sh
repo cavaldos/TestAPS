@@ -1,1 +1,2 @@
-docker compose -f mssql.yml up -d
+docker build -t my-mssql .
+docker run -p 1445:1433 -d my-mssql
